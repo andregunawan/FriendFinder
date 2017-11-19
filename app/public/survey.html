@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../js/underscore.js"></script>
+</head>
+<body>
+<div class="row container-fluid">
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-3">
+                <p><a href="/">< Go Back</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row container-fluid">
+    <div class="col-lg-12">
+        <h2>Survey Questions</h2>
+        <hr>
+        <h2>About you</h2>
+        <div class="form-group col-lg-12">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>Name</h4>
+                    <input type="text" id="userName" class="form-control" placeholder="Your name..." required><br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>Image Link</h4>
+                    <input type="text" id="userImgLink" class="form-control" placeholder="Your image link..." required>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="card" style="padding: 20px">
+            <form>
+                <h4>Question 1</h4>
+                <h5>Chill at home on the weekend.</h5>
+                <select id="q1">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <hr>
+                <h4>Question 2</h4>
+                <h5>You make friends easily.</h5>
+                <select id="q2">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select><hr>
+
+                <h4>Question 3</h4>
+                <h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+                <select id="q3">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select><hr>
+
+                <h4>Question 4</h4>
+                <h5>People can rarely upset you.</h5>
+                <select id="q4">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select><hr>
+
+                <h4>Question 5</h4>
+                <h5>Mac are better than Windows.</h5>
+                <select id="q5">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select><hr>
+
+                <h4>Question 6</h4>
+                <h5>You dislike being the center of attention.</h5>
+                <select id="q6">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select><hr>
+
+                <h4>Question 7</h4>
+                <h5>You talk to a lot of different people at parties.</h5>
+                <select id="q7">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select><hr>
+
+                <h4>Question 8</h4>
+                <h5>You get upset easily.</h5>
+                <select id="q8">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select><hr>
+
+                <h4>Question 9</h4>
+                <h5>You always try to follow the rules.</h5>
+                <select id="q9">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select><hr>
+
+                <h4>Question 10</h4>
+                <h5>You like music.</h5>
+                <select id="q10">
+                    <option value="" disabled="disabled" selected="selected">Select an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <div class="btn-group" role="group">
+                    <button id='submitBtn' class='btn-success col-lg-12' data-toggle='modal' data-target='#myModal' style='margin-top: 20px'>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="row container-fluid">
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-lg-3">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/andregunawan/FriendFinder">Github Repo</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade classModal" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Best Match</h4>
+            </div>
+            <div class="modal-body">
+                <h1 id="matchName">Unknown</h1>
+                <img id="matchImg" height="300px" width="300px" src="http://redhorsemyrtletree.com/133s/wp-content/uploads/2013/06/funny-dog-face.jpg">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <script src="../js/index.js"></script> -->
+<script src="../data/friends.js"></script>
+</body>
+</html>
